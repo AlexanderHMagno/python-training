@@ -65,7 +65,7 @@ class ScreenManager:
 
                 if self.snake.check_body_collision():
                     self.game_is_on = False
-                    print("Game over")
+                    self.scoreboard.game_over()
 
         if not self.game_is_on:
           restart = self.screen.textinput("Game Over", "Do you want to play again? (y/n)")
