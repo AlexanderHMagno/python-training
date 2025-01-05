@@ -87,7 +87,7 @@ class Snake:
         return False
 
     def check_cookie_collision(self, cookie):
-        if self.snake[0].distance(cookie.cookie) < 20:
+        if self.snake[0].distance(cookie) < 20:
             print("Cookie eaten")
             cookie.create_cookie()
             self.add_segment(self.snake[-1].position())

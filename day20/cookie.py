@@ -1,15 +1,15 @@
-import turtle
+from turtle import Turtle
 import random
 
-class Cookie:
+class Cookie(Turtle):
     def __init__(self):
-        self.cookie = turtle.Turtle()
-        self.cookie.shape("circle")
-        self.cookie.color("yellow")
-        self.cookie.penup()
+        super().__init__()
+        self.shape("circle")
+        self.color("yellow")
+        self.penup()
         self.create_cookie()
     
     def create_cookie(self):
         cookie_x = random.randint(-280, 280)
         cookie_y = random.randint(-280, 280)
-        self.cookie.goto(cookie_x, cookie_y)
+        self.goto(cookie_x, cookie_y)
