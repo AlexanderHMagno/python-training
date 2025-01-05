@@ -44,22 +44,22 @@ class Snake:
     def translate_y(self, segment, y_cor):
         if y_cor > 290:
             segment.hideturtle()
-            segment.sety(-300)
+            segment.sety(-310)
         
         elif y_cor < -290:
             segment.hideturtle()
-            segment.sety(300)
+            segment.sety(310)
 
     def translate_x(self, segment, x_cor): 
            #If X coordinate is greater than 290, set it to -290
         if x_cor > 290:
             segment.hideturtle()
-            segment.setx(-300)
+            segment.setx(-310)
         
         #If X coordinate is less than -290, set it to 290
         elif x_cor < -300:
             segment.hideturtle()
-            segment.setx(290)
+            segment.setx(310)
         
         segment.showturtle()
 
