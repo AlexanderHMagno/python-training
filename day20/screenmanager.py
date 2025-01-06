@@ -9,7 +9,6 @@ class ScreenManager:
 
     snake = None
     cookie = None 
-    score = 0
     game_is_on = True
     game_paused = False
 
@@ -42,7 +41,6 @@ class ScreenManager:
 
     def restart_game(self):
         self.screen.reset()
-        self.score = 0
         self.game_is_on = True
         self.game_paused = False
         self.snake = snake.Snake()
